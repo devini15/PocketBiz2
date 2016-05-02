@@ -1,0 +1,507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D7EC2D221CD7E03000D6E8B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7EC2D211CD7E03000D6E8B6 /* AppDelegate.swift */; };
+		D7EC2D241CD7E03000D6E8B6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7EC2D231CD7E03000D6E8B6 /* ViewController.swift */; };
+		D7EC2D271CD7E03000D6E8B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7EC2D251CD7E03000D6E8B6 /* Main.storyboard */; };
+		D7EC2D291CD7E03000D6E8B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7EC2D281CD7E03000D6E8B6 /* Assets.xcassets */; };
+		D7EC2D2C1CD7E03000D6E8B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7EC2D2A1CD7E03000D6E8B6 /* LaunchScreen.storyboard */; };
+		D7EC2D371CD7E03000D6E8B6 /* PocketBizTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7EC2D361CD7E03000D6E8B6 /* PocketBizTests.swift */; };
+		D7EC2D421CD7E03000D6E8B6 /* PocketBizUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7EC2D411CD7E03000D6E8B6 /* PocketBizUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D7EC2D331CD7E03000D6E8B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D7EC2D161CD7E03000D6E8B6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D7EC2D1D1CD7E03000D6E8B6;
+			remoteInfo = PocketBiz;
+		};
+		D7EC2D3E1CD7E03000D6E8B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D7EC2D161CD7E03000D6E8B6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D7EC2D1D1CD7E03000D6E8B6;
+			remoteInfo = PocketBiz;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D7EC2D1E1CD7E03000D6E8B6 /* PocketBiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PocketBiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7EC2D211CD7E03000D6E8B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D7EC2D231CD7E03000D6E8B6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D7EC2D261CD7E03000D6E8B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D7EC2D281CD7E03000D6E8B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D7EC2D2B1CD7E03000D6E8B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D7EC2D2D1CD7E03000D6E8B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7EC2D321CD7E03000D6E8B6 /* PocketBizTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PocketBizTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7EC2D361CD7E03000D6E8B6 /* PocketBizTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PocketBizTests.swift; sourceTree = "<group>"; };
+		D7EC2D381CD7E03000D6E8B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7EC2D3D1CD7E03000D6E8B6 /* PocketBizUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PocketBizUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7EC2D411CD7E03000D6E8B6 /* PocketBizUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PocketBizUITests.swift; sourceTree = "<group>"; };
+		D7EC2D431CD7E03000D6E8B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D7EC2D1B1CD7E03000D6E8B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7EC2D2F1CD7E03000D6E8B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7EC2D3A1CD7E03000D6E8B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D7EC2D151CD7E03000D6E8B6 = {
+			isa = PBXGroup;
+			children = (
+				D7EC2D201CD7E03000D6E8B6 /* PocketBiz */,
+				D7EC2D351CD7E03000D6E8B6 /* PocketBizTests */,
+				D7EC2D401CD7E03000D6E8B6 /* PocketBizUITests */,
+				D7EC2D1F1CD7E03000D6E8B6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D7EC2D1F1CD7E03000D6E8B6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D7EC2D1E1CD7E03000D6E8B6 /* PocketBiz.app */,
+				D7EC2D321CD7E03000D6E8B6 /* PocketBizTests.xctest */,
+				D7EC2D3D1CD7E03000D6E8B6 /* PocketBizUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D7EC2D201CD7E03000D6E8B6 /* PocketBiz */ = {
+			isa = PBXGroup;
+			children = (
+				D7EC2D211CD7E03000D6E8B6 /* AppDelegate.swift */,
+				D7EC2D231CD7E03000D6E8B6 /* ViewController.swift */,
+				D7EC2D251CD7E03000D6E8B6 /* Main.storyboard */,
+				D7EC2D281CD7E03000D6E8B6 /* Assets.xcassets */,
+				D7EC2D2A1CD7E03000D6E8B6 /* LaunchScreen.storyboard */,
+				D7EC2D2D1CD7E03000D6E8B6 /* Info.plist */,
+			);
+			path = PocketBiz;
+			sourceTree = "<group>";
+		};
+		D7EC2D351CD7E03000D6E8B6 /* PocketBizTests */ = {
+			isa = PBXGroup;
+			children = (
+				D7EC2D361CD7E03000D6E8B6 /* PocketBizTests.swift */,
+				D7EC2D381CD7E03000D6E8B6 /* Info.plist */,
+			);
+			path = PocketBizTests;
+			sourceTree = "<group>";
+		};
+		D7EC2D401CD7E03000D6E8B6 /* PocketBizUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D7EC2D411CD7E03000D6E8B6 /* PocketBizUITests.swift */,
+				D7EC2D431CD7E03000D6E8B6 /* Info.plist */,
+			);
+			path = PocketBizUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D7EC2D1D1CD7E03000D6E8B6 /* PocketBiz */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7EC2D461CD7E03000D6E8B6 /* Build configuration list for PBXNativeTarget "PocketBiz" */;
+			buildPhases = (
+				D7EC2D1A1CD7E03000D6E8B6 /* Sources */,
+				D7EC2D1B1CD7E03000D6E8B6 /* Frameworks */,
+				D7EC2D1C1CD7E03000D6E8B6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PocketBiz;
+			productName = PocketBiz;
+			productReference = D7EC2D1E1CD7E03000D6E8B6 /* PocketBiz.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D7EC2D311CD7E03000D6E8B6 /* PocketBizTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7EC2D491CD7E03000D6E8B6 /* Build configuration list for PBXNativeTarget "PocketBizTests" */;
+			buildPhases = (
+				D7EC2D2E1CD7E03000D6E8B6 /* Sources */,
+				D7EC2D2F1CD7E03000D6E8B6 /* Frameworks */,
+				D7EC2D301CD7E03000D6E8B6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D7EC2D341CD7E03000D6E8B6 /* PBXTargetDependency */,
+			);
+			name = PocketBizTests;
+			productName = PocketBizTests;
+			productReference = D7EC2D321CD7E03000D6E8B6 /* PocketBizTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D7EC2D3C1CD7E03000D6E8B6 /* PocketBizUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7EC2D4C1CD7E03000D6E8B6 /* Build configuration list for PBXNativeTarget "PocketBizUITests" */;
+			buildPhases = (
+				D7EC2D391CD7E03000D6E8B6 /* Sources */,
+				D7EC2D3A1CD7E03000D6E8B6 /* Frameworks */,
+				D7EC2D3B1CD7E03000D6E8B6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D7EC2D3F1CD7E03000D6E8B6 /* PBXTargetDependency */,
+			);
+			name = PocketBizUITests;
+			productName = PocketBizUITests;
+			productReference = D7EC2D3D1CD7E03000D6E8B6 /* PocketBizUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D7EC2D161CD7E03000D6E8B6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = JohnHerseyHighSchool;
+				TargetAttributes = {
+					D7EC2D1D1CD7E03000D6E8B6 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					D7EC2D311CD7E03000D6E8B6 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = D7EC2D1D1CD7E03000D6E8B6;
+					};
+					D7EC2D3C1CD7E03000D6E8B6 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = D7EC2D1D1CD7E03000D6E8B6;
+					};
+				};
+			};
+			buildConfigurationList = D7EC2D191CD7E03000D6E8B6 /* Build configuration list for PBXProject "PocketBiz" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D7EC2D151CD7E03000D6E8B6;
+			productRefGroup = D7EC2D1F1CD7E03000D6E8B6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D7EC2D1D1CD7E03000D6E8B6 /* PocketBiz */,
+				D7EC2D311CD7E03000D6E8B6 /* PocketBizTests */,
+				D7EC2D3C1CD7E03000D6E8B6 /* PocketBizUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D7EC2D1C1CD7E03000D6E8B6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7EC2D2C1CD7E03000D6E8B6 /* LaunchScreen.storyboard in Resources */,
+				D7EC2D291CD7E03000D6E8B6 /* Assets.xcassets in Resources */,
+				D7EC2D271CD7E03000D6E8B6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7EC2D301CD7E03000D6E8B6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7EC2D3B1CD7E03000D6E8B6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D7EC2D1A1CD7E03000D6E8B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7EC2D241CD7E03000D6E8B6 /* ViewController.swift in Sources */,
+				D7EC2D221CD7E03000D6E8B6 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7EC2D2E1CD7E03000D6E8B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7EC2D371CD7E03000D6E8B6 /* PocketBizTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7EC2D391CD7E03000D6E8B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7EC2D421CD7E03000D6E8B6 /* PocketBizUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D7EC2D341CD7E03000D6E8B6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D7EC2D1D1CD7E03000D6E8B6 /* PocketBiz */;
+			targetProxy = D7EC2D331CD7E03000D6E8B6 /* PBXContainerItemProxy */;
+		};
+		D7EC2D3F1CD7E03000D6E8B6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D7EC2D1D1CD7E03000D6E8B6 /* PocketBiz */;
+			targetProxy = D7EC2D3E1CD7E03000D6E8B6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D7EC2D251CD7E03000D6E8B6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D7EC2D261CD7E03000D6E8B6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D7EC2D2A1CD7E03000D6E8B6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D7EC2D2B1CD7E03000D6E8B6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D7EC2D441CD7E03000D6E8B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D7EC2D451CD7E03000D6E8B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D7EC2D471CD7E03000D6E8B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PocketBiz/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JHHS.PocketBiz;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D7EC2D481CD7E03000D6E8B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PocketBiz/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JHHS.PocketBiz;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D7EC2D4A1CD7E03000D6E8B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PocketBizTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JHHS.PocketBizTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PocketBiz.app/PocketBiz";
+			};
+			name = Debug;
+		};
+		D7EC2D4B1CD7E03000D6E8B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PocketBizTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JHHS.PocketBizTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PocketBiz.app/PocketBiz";
+			};
+			name = Release;
+		};
+		D7EC2D4D1CD7E03000D6E8B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PocketBizUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JHHS.PocketBizUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = PocketBiz;
+			};
+			name = Debug;
+		};
+		D7EC2D4E1CD7E03000D6E8B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PocketBizUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JHHS.PocketBizUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = PocketBiz;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D7EC2D191CD7E03000D6E8B6 /* Build configuration list for PBXProject "PocketBiz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7EC2D441CD7E03000D6E8B6 /* Debug */,
+				D7EC2D451CD7E03000D6E8B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D7EC2D461CD7E03000D6E8B6 /* Build configuration list for PBXNativeTarget "PocketBiz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7EC2D471CD7E03000D6E8B6 /* Debug */,
+				D7EC2D481CD7E03000D6E8B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D7EC2D491CD7E03000D6E8B6 /* Build configuration list for PBXNativeTarget "PocketBizTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7EC2D4A1CD7E03000D6E8B6 /* Debug */,
+				D7EC2D4B1CD7E03000D6E8B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D7EC2D4C1CD7E03000D6E8B6 /* Build configuration list for PBXNativeTarget "PocketBizUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7EC2D4D1CD7E03000D6E8B6 /* Debug */,
+				D7EC2D4E1CD7E03000D6E8B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D7EC2D161CD7E03000D6E8B6 /* Project object */;
+}
