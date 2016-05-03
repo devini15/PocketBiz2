@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,11 +18,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="appLogo" translatesAutoresizingMaskIntoConstraints="NO" id="BmZ-m5-siP">
-                                <rect key="frame" x="168" y="187" width="276" height="134"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appLogo" translatesAutoresizingMaskIntoConstraints="NO" id="BmZ-m5-siP">
+                                <rect key="frame" x="162" y="233" width="276" height="134"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="BmZ-m5-siP" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="142" id="0sU-L0-uIg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="BmZ-m5-siP" secondAttribute="trailing" constant="142" id="6Vi-3Q-wKx"/>
+                            <constraint firstItem="BmZ-m5-siP" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="213" id="Bfh-E8-5tR"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="BmZ-m5-siP" secondAttribute="bottom" constant="233" id="K3B-kv-ZHe"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -30,6 +37,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="appLogo" width="214" height="93"/>
+        <image name="appLogo" width="419" height="139"/>
     </resources>
 </document>
