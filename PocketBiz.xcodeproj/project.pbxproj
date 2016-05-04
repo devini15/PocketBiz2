@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D7329A831CDA880C00143DFF /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7329A821CDA880C00143DFF /* MapViewController.swift */; };
 		D7EC2D221CD7E03000D6E8B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7EC2D211CD7E03000D6E8B6 /* AppDelegate.swift */; };
 		D7EC2D241CD7E03000D6E8B6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7EC2D231CD7E03000D6E8B6 /* ViewController.swift */; };
 		D7EC2D271CD7E03000D6E8B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7EC2D251CD7E03000D6E8B6 /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D7329A821CDA880C00143DFF /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapViewController.swift; path = ../MapViewController.swift; sourceTree = "<group>"; };
 		D7EC2D1E1CD7E03000D6E8B6 /* PocketBiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PocketBiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7EC2D211CD7E03000D6E8B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D7EC2D231CD7E03000D6E8B6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 			children = (
 				D7EC2D211CD7E03000D6E8B6 /* AppDelegate.swift */,
 				D7EC2D231CD7E03000D6E8B6 /* ViewController.swift */,
+				D7329A821CDA880C00143DFF /* MapViewController.swift */,
 				D7EC2D251CD7E03000D6E8B6 /* Main.storyboard */,
 				D7EC2D281CD7E03000D6E8B6 /* Assets.xcassets */,
 				D7EC2D2A1CD7E03000D6E8B6 /* LaunchScreen.storyboard */,
@@ -257,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7EC2D241CD7E03000D6E8B6 /* ViewController.swift in Sources */,
+				D7329A831CDA880C00143DFF /* MapViewController.swift in Sources */,
 				D7EC2D221CD7E03000D6E8B6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -488,6 +492,7 @@
 				D7EC2D481CD7E03000D6E8B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D7EC2D491CD7E03000D6E8B6 /* Build configuration list for PBXNativeTarget "PocketBizTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +501,7 @@
 				D7EC2D4B1CD7E03000D6E8B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D7EC2D4C1CD7E03000D6E8B6 /* Build configuration list for PBXNativeTarget "PocketBizUITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +510,7 @@
 				D7EC2D4E1CD7E03000D6E8B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
