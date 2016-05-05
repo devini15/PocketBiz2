@@ -96,6 +96,38 @@
             </objects>
             <point key="canvasLocation" x="2017" y="355"/>
         </scene>
+        <!--Map View Controller-->
+        <scene sceneID="IGZ-U5-jG1">
+            <objects>
+                <viewController id="89N-41-exT" customClass="MapViewController" customModule="PocketBiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dYM-Rt-jSu"/>
+                        <viewControllerLayoutGuide type="bottom" id="ebl-1s-LLr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tkE-ln-BuA">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="RML-IW-7Ax">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="RML-IW-7Ax" firstAttribute="leading" secondItem="tkE-ln-BuA" secondAttribute="leadingMargin" constant="-20" id="CPq-fA-rF7"/>
+                            <constraint firstItem="ebl-1s-LLr" firstAttribute="top" secondItem="RML-IW-7Ax" secondAttribute="bottom" id="OdL-d0-uV0"/>
+                            <constraint firstItem="RML-IW-7Ax" firstAttribute="top" secondItem="tkE-ln-BuA" secondAttribute="topMargin" id="R9x-Rh-EB8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="RML-IW-7Ax" secondAttribute="trailing" constant="-20" id="Tfg-uk-S3D"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="theMapView" destination="RML-IW-7Ax" id="gSN-vQ-p0R"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AnL-c4-hKN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2650" y="355"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="K8T-Bn-hvT">
             <objects>
