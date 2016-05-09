@@ -79,13 +79,26 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rof-4t-Fme">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rof-4t-Fme">
                                 <rect key="frame" x="108" y="102" width="266" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2r6-ZN-YHy">
+                                <rect key="frame" x="150" y="150" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="ixJ-iw-roD"/>
+                                    <constraint firstAttribute="height" constant="300" id="rIK-Kh-mZb"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2r6-ZN-YHy" firstAttribute="leading" secondItem="0ZQ-dE-H2q" secondAttribute="leadingMargin" constant="130" id="5uS-Ft-Zlx"/>
+                            <constraint firstItem="MHX-IO-9oD" firstAttribute="top" secondItem="2r6-ZN-YHy" secondAttribute="bottom" constant="150" id="NDX-AH-Nwr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2r6-ZN-YHy" secondAttribute="trailing" constant="130" id="dSX-FU-fM1"/>
+                            <constraint firstItem="2r6-ZN-YHy" firstAttribute="top" secondItem="rof-4t-Fme" secondAttribute="bottom" constant="18" id="p3I-18-3tS"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="locationTextField" destination="rof-4t-Fme" id="v3O-Pm-PIZ"/>
@@ -95,6 +108,38 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2mI-dz-oeL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2017" y="355"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="IGZ-U5-jG1">
+            <objects>
+                <viewController id="89N-41-exT" customClass="MapViewController" customModule="PocketBiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dYM-Rt-jSu"/>
+                        <viewControllerLayoutGuide type="bottom" id="ebl-1s-LLr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tkE-ln-BuA">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="RML-IW-7Ax">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="RML-IW-7Ax" firstAttribute="leading" secondItem="tkE-ln-BuA" secondAttribute="leadingMargin" constant="-20" id="CPq-fA-rF7"/>
+                            <constraint firstItem="ebl-1s-LLr" firstAttribute="top" secondItem="RML-IW-7Ax" secondAttribute="bottom" id="OdL-d0-uV0"/>
+                            <constraint firstItem="RML-IW-7Ax" firstAttribute="top" secondItem="tkE-ln-BuA" secondAttribute="topMargin" id="R9x-Rh-EB8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="RML-IW-7Ax" secondAttribute="trailing" constant="-20" id="Tfg-uk-S3D"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="theMapView" destination="RML-IW-7Ax" id="gSN-vQ-p0R"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AnL-c4-hKN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2650" y="355"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="K8T-Bn-hvT">
