@@ -17,8 +17,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let customerOne = Accounts(Name: "Customer #1", Location: "707 Glendale Dr Prospect Heights")
+        let customerOne = Accounts(Name: "Matt Runge", Location: "707 Glendale Dr Prospect Heights")
         AccountsArray.append(customerOne)
+        let customerTwo = Accounts(Name: "Devin", Location: "705 Glendale Dr Prospect Heights")
+        AccountsArray.append(customerTwo)
+        let customerThree = Accounts(Name: "Tom", Location: "705 Glendale Dr Prospect Heights")
+        AccountsArray.append(customerThree)
+        
         
 
         
