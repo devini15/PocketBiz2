@@ -109,7 +109,6 @@
 				D78C68661CDA80B60034A07A /* SecondViewController.swift */,
 				D78C68681CDA81400034A07A /* Information.swift */,
 				D7EC2D251CD7E03000D6E8B6 /* Main.storyboard */,
-				D744F9FF1CDBD631003FCCE9 /* MapViewController.swift */,
 				D7EC2D281CD7E03000D6E8B6 /* Assets.xcassets */,
 				D7EC2D2A1CD7E03000D6E8B6 /* LaunchScreen.storyboard */,
 				D7EC2D2D1CD7E03000D6E8B6 /* Info.plist */,
@@ -270,7 +269,6 @@
 				D7EC2D241CD7E03000D6E8B6 /* ViewController.swift in Sources */,
 				D7329A831CDA880C00143DFF /* MapViewController.swift in Sources */,
 				D78C68691CDA81400034A07A /* Information.swift in Sources */,
-				D744FA001CDBD631003FCCE9 /* MapViewController.swift in Sources */,
 				D7EC2D221CD7E03000D6E8B6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
