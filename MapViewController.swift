@@ -6,33 +6,55 @@
 //  Copyright © 2016 JohnHerseyHighSchool. All rights reserved.
 //
 
+//
+
 import UIKit
 import MapKit
-class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate  {
+import CoreLocation
+
+class MapViewController: UIViewController, CLLocationManagerDelegate {
     
-    @IBOutlet weak var theMapView: MKMapView!
+    @IBOutlet weak var myMapView: MKMapView!
+    var location = ""
+    var name = ""
+    let geocoder = CLGeocoder()
+    var locationManager = CLLocationManager()
     
-    var locationManager: CLLocationManager!
-    var locationAdress: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        theMapView.delegate = self
         
-        let location = locationAdress
-        let geoCoder = CLGeocoder()
-        geoCoder.geocodeAddressString(location) { (arrayOfPlacemarks, Error) -> Void in
-            for place in arrayOfPlacemarks! {
+        geocoder.geocodeAddressString(location + " " + location,completionHandler: { placemarks, error in
+            
+            if (error != nil)
+            {
+                print(error)
+            }
+            else
+            {
+                let currentCustomer = Accounts()
                 let annotation = MKPointAnnotation()
-                annotation.coordinate = (place.location?.coordinate)!
-                annotation.title = place.name
-                self.theMapView.addAnnotation(annotation)
+                var coordinate = CLLocationCoordinate2D()
+                
+                let placemark = placemarks![0] as CLPlacemark
+                coordinate = placemark.location!.coordinate
+                self.locationManager.delegate = self
+                self.myMapView.showsUserLocation = true
+                self.myMapView.userLocation.title = self.location
+                annotation.coordinate = coordinate
+                annotation.title = self.location
+                annotation.subtitle = self.location
+                self.myMapView.addAnnotation(annotation)
+                self.myMapView.setCenterCoordinate(coordinate, animated: true)
+                self.locationManager.requestAlwaysAuthorization()
+                self.locationManager.startUpdatingLocation()
+                var span = MKCoordinateSpanMake ( 5.0, 5.0)
+                let region = MKCoordinateRegionMake(coordinate, span)
+                self.myMapView.setRegion(region, animated: true)
+                
                 
             }
-        }
-        theMapView.showsUserLocation = true
+            
+        })
     }
-    
-    
 }
-

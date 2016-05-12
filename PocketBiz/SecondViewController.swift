@@ -12,17 +12,10 @@ class SecondViewController: UIViewController {
     
     
     var customer = Accounts()
-    
+    var customers = Accounts()
     
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var locationTextField: UITextField!
-    
-    
-    
-    
-    
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,5 +26,15 @@ class SecondViewController: UIViewController {
 
      
     }
-
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+            if segue.identifier == "Matt"{
+        
+            let nvc = segue.destinationViewController as! MapViewController
+            nvc.location = customers.name
+            
+            
+        }}
 }
+
+
