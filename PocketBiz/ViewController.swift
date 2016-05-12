@@ -9,13 +9,14 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     @IBOutlet weak var myTableView: UITableView!
     var AccountsArray : [Accounts] = [Accounts]()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+
         
         let customerOne = Accounts(Name: "Matt Runge", Location: "707 Glendale Dr Prospect Heights")
         AccountsArray.append(customerOne)
