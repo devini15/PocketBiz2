@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import BDGShare
 class SecondViewController: UIViewController {
     
     
@@ -34,7 +34,10 @@ class SecondViewController: UIViewController {
             nvc.location = customers.name
             
             
-        }}
+        }
+    
+    }
+    
 }
 
 
