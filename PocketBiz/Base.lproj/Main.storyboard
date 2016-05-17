@@ -90,20 +90,29 @@
                                     <segue destination="89N-41-exT" kind="show" id="qYA-Dd-h3y"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gmZ-Gh-wnJ">
-                                <rect key="frame" x="62" y="265" width="253" height="261"/>
-                            </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NAb-s7-lZH">
                                 <rect key="frame" x="20" y="111" width="325" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GZ4-zZ-hOc">
+                                <rect key="frame" x="103" y="240" width="170" height="38"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="Add Image"/>
+                                <connections>
+                                    <action selector="addImage:" destination="HDh-WG-L3v" eventType="touchUpInside" id="j4N-9R-Ey1"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gmZ-Gh-wnJ">
+                                <rect key="frame" x="62" y="295" width="253" height="261"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="imageView" destination="gmZ-Gh-wnJ" id="QZW-S5-DZc"/>
                         <outlet property="locationTextField" destination="rof-4t-Fme" id="v3O-Pm-PIZ"/>
                         <outlet property="nameTextField" destination="NAb-s7-lZH" id="CAE-eW-Bdp"/>
                     </connections>
