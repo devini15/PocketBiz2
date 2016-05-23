@@ -7,8 +7,7 @@
 //
 
 import UIKit
-
-class SecondViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class SecondViewController: UIViewController, UIImagePickerControllerDelegate,UINavigationControllerDelegate {
     
     @IBOutlet weak var imageView: UIImageView!
     
@@ -30,8 +29,8 @@ class SecondViewController: UIViewController, UIImagePickerControllerDelegate, U
         nameTextField.text = customer.name
         locationTextField.text = customer.location
         
-        }
-     func imagePickerControllerDidCancel(picker: UIImagePickerController) {
+    }
+    func imagePickerControllerDidCancel(picker: UIImagePickerController) {
         picker.dismissViewControllerAnimated(true, completion: nil)
     }
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
@@ -44,7 +43,7 @@ class SecondViewController: UIViewController, UIImagePickerControllerDelegate, U
         actionsheet.popoverPresentationController?.sourceView = self.view
         actionsheet.popoverPresentationController?.sourceRect = CGRect(x: 0, y: self.view.frame.height, width: self.view.frame.width , height: 100)
         let libraryButton = UIAlertAction(title: "Photo Library", style: .Default) { (action) -> Void in
-        self.picker.sourceType  = UIImagePickerControllerSourceType.PhotoLibrary
+            self.picker.sourceType  = UIImagePickerControllerSourceType.PhotoLibrary
             self.presentViewController(self.picker, animated: true, completion: nil)
             
         }
@@ -59,33 +58,42 @@ class SecondViewController: UIViewController, UIImagePickerControllerDelegate, U
         presentViewController(actionsheet, animated: true, completion: nil)
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-            if segue.identifier == "Matt"{
-        
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
+    {
+        if segue.identifier == "Matt"{
+            
             let nvc = segue.destinationViewController as! MapViewController
             nvc.location = customers.name
-            
-            
         }
-    
     }
     
+    
+    func animateImage()
+    {
+        if self.photos.count > 0
+        {
+            if self.count < self.photos.count - 1 && self.photos.count != 1
+            {
+            }
+            else
+            {
+                self.count = 0
+            }
+            UIView.animateWithDuration(1.0, delay: 0.0, options: .CurveEaseOut, animations: { () -> Void in
+                self.imageView.alpha = 0.0
+                }, completion: { (finished) -> Void in
+                    self.imageView.image = self.photos[self.count]
+                    UIView.animateWithDuration(1.0, delay: 0.0, options: .CurveEaseOut, animations: { () -> Void in
+                        self.imageView.alpha = 1.0
+                        }, completion: { (finished) -> Void in
+                            
+                        }
+                    )
+                }
+            )
+        }
+    }
 }
 
-func animateImage()
-{
-//    if self.photos.count > 0 {
-//        if self.count < self.photos.count - 1 && self.photos.count != 1 {
-//        }else{
-//            self.count = 0
-//        }
-//        UIView.animateWithDuration(1.0, delay: 0.0, options: .CurveEaseOut, animations: { () -> Void in
-//            self.imageView.alpha = 0.0
-//            }, completion: { (finished) -> Void in
-//                self.imageView.image = self.photos[self.count]
-//                UIView.animateWithDuration(1.0, delay: 0.0, options: .CurveEaseOut, animations: { () -> Void in
-//                    self.imageView.alpha = 1.0
-//                    }, completion: { (finished) -> Void in
-//                        
-//                } ) } ) } } } } }
-}
+
+
