@@ -7,8 +7,8 @@
 //
 
 import UIKit
-import BDGShare
-class SecondViewController: UIViewController {
+
+class SecondViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     @IBOutlet weak var imageView: UIImageView!
     
@@ -74,17 +74,18 @@ class SecondViewController: UIViewController {
 
 func animateImage()
 {
-    if self.photos.count > 0 {
-        if self.count < self.photos.count - 1 && self.photos.count != 1 {
-        }else{
-            self.count = 0
-        }
-        UIView.animateWithDuration(1.0, delay: 0.0, options: .CurveEaseOut, animations: { () -> Void in
-            self.imageView.alpha = 0.0
-            }, completion: { (finished) -> Void in
-                self.imageView.image = self.photos[self.count]
-                UIView.animateWithDuration(1.0, delay: 0.0, options: .CurveEaseOut, animations: { () -> Void in
-                    self.imageView.alpha = 1.0
-                    }, completion: { (finished) -> Void in
-                        
-                } ) } ) } } } }
+//    if self.photos.count > 0 {
+//        if self.count < self.photos.count - 1 && self.photos.count != 1 {
+//        }else{
+//            self.count = 0
+//        }
+//        UIView.animateWithDuration(1.0, delay: 0.0, options: .CurveEaseOut, animations: { () -> Void in
+//            self.imageView.alpha = 0.0
+//            }, completion: { (finished) -> Void in
+//                self.imageView.image = self.photos[self.count]
+//                UIView.animateWithDuration(1.0, delay: 0.0, options: .CurveEaseOut, animations: { () -> Void in
+//                    self.imageView.alpha = 1.0
+//                    }, completion: { (finished) -> Void in
+//                        
+//                } ) } ) } } } } }
+}

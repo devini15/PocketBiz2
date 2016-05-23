@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>BDGShare.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-PocketBiz.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-PocketBizTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-PocketBizUITests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>47866FC96F9D38859FF43EA8253B47AF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7EB4229D146341D24AA54C18BB2752D5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CFDC7944A50094C37C264D95A9B63544</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D64DEC6D6FE34E44F3AAFCA6E81BF37E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
