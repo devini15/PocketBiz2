@@ -15,7 +15,7 @@ class SecondViewController: UIViewController, UIImagePickerControllerDelegate,UI
     var customers = Accounts()
     var picker = UIImagePickerController()
     var photos = [UIImage]()
-    var count = 0
+    
     
     
     @IBOutlet weak var nameTextField: UITextField!
@@ -46,6 +46,7 @@ class SecondViewController: UIViewController, UIImagePickerControllerDelegate,UI
             self.picker.sourceType  = UIImagePickerControllerSourceType.PhotoLibrary
             self.presentViewController(self.picker, animated: true, completion: nil)
             
+            
         }
         actionsheet.addAction(libraryButton)
         
@@ -57,43 +58,11 @@ class SecondViewController: UIViewController, UIImagePickerControllerDelegate,UI
         
         presentViewController(actionsheet, animated: true, completion: nil)
     }
-    
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
-    {
-        if segue.identifier == "Matt"{
-            
-            let nvc = segue.destinationViewController as! MapViewController
-            nvc.location = customers.name
-        }
+
     }
     
     
-    func animateImage()
-    {
-        if self.photos.count > 0
-        {
-            if self.count < self.photos.count - 1 && self.photos.count != 1
-            {
-            }
-            else
-            {
-                self.count = 0
-            }
-            UIView.animateWithDuration(1.0, delay: 0.0, options: .CurveEaseOut, animations: { () -> Void in
-                self.imageView.alpha = 0.0
-                }, completion: { (finished) -> Void in
-                    self.imageView.image = self.photos[self.count]
-                    UIView.animateWithDuration(1.0, delay: 0.0, options: .CurveEaseOut, animations: { () -> Void in
-                        self.imageView.alpha = 1.0
-                        }, completion: { (finished) -> Void in
-                            
-                        }
-                    )
-                }
-            )
-        }
-    }
-}
+    
 
 
 
