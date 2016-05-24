@@ -82,14 +82,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="igI-hN-Xfk">
-                                <rect key="frame" x="78" y="202" width="237" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <state key="normal" title="View Map View "/>
-                                <connections>
-                                    <segue destination="89N-41-exT" kind="show" id="qYA-Dd-h3y"/>
-                                </connections>
-                            </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NAb-s7-lZH">
                                 <rect key="frame" x="20" y="111" width="325" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -106,6 +98,26 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gmZ-Gh-wnJ">
                                 <rect key="frame" x="62" y="295" width="253" height="261"/>
                             </imageView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k9z-1D-LcN">
+                                <rect key="frame" x="0.0" y="64" width="600" height="44"/>
+                                <items>
+                                    <navigationItem title="Title" id="mOs-Ja-gjY">
+                                        <barButtonItem key="rightBarButtonItem" title="Share" id="S4g-5R-HlC">
+                                            <connections>
+                                                <action selector="shareButtonPlease:" destination="HDh-WG-L3v" id="Q6V-8M-wXO"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="igI-hN-Xfk">
+                                <rect key="frame" x="272" y="216" width="237" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="View Map View "/>
+                                <connections>
+                                    <segue destination="89N-41-exT" kind="show" id="qYA-Dd-h3y"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -119,7 +131,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2mI-dz-oeL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2002" y="-155"/>
+            <point key="canvasLocation" x="2028" y="-155"/>
         </scene>
         <!--Map View Controller-->
         <scene sceneID="IGZ-U5-jG1">
