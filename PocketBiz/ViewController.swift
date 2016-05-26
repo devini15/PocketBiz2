@@ -18,7 +18,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         super.viewDidLoad()
 
         
-        let customerOne = Accounts(Name: "Matt Runge", Location: "707 Glendale Dr Prospect Heights")
+        let customerOne = Accounts(Name: "707 Glendale Dr Prospect Heights", Location: "707 Glendale Dr Prospect Heights")
         AccountsArray.append(customerOne)
         let customerTwo = Accounts(Name: "Devin", Location: "705 Glendale Dr Prospect Heights")
         AccountsArray.append(customerTwo)

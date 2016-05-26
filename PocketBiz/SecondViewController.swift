@@ -15,6 +15,9 @@ class SecondViewController: UIViewController, UIImagePickerControllerDelegate,UI
     var customers = Accounts()
     var picker = UIImagePickerController()
     var photos = [UIImage]()
+    var newAccounts = Accounts()
+    
+    
     
     
     
@@ -36,17 +39,23 @@ class SecondViewController: UIViewController, UIImagePickerControllerDelegate,UI
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
         self.picker.dismissViewControllerAnimated(true) { () -> Void in
             self.photos.append(info[UIImagePickerControllerEditedImage] as! UIImage)
+            self.imageView.image = (info[UIImagePickerControllerEditedImage] as! UIImage)
+            
+            
+            
         }
     }
-    @IBAction func addImage(sender: AnyObject) {
+    @IBAction func addImage(sender: UIButton) {
         let actionsheet = UIAlertController(title: "title", message: nil, preferredStyle: .ActionSheet)
         actionsheet.popoverPresentationController?.sourceView = self.view
         actionsheet.popoverPresentationController?.sourceRect = CGRect(x: 0, y: self.view.frame.height, width: self.view.frame.width , height: 100)
+        
+        
+        
+        
         let libraryButton = UIAlertAction(title: "Photo Library", style: .Default) { (action) -> Void in
             self.picker.sourceType  = UIImagePickerControllerSourceType.PhotoLibrary
             self.presentViewController(self.picker, animated: true, completion: nil)
-            
-            
         }
         actionsheet.addAction(libraryButton)
         
@@ -58,11 +67,22 @@ class SecondViewController: UIViewController, UIImagePickerControllerDelegate,UI
         
         presentViewController(actionsheet, animated: true, completion: nil)
     }
-
+    
+    
+    @IBAction func shareButtonPlease(sender: UIBarButtonItem) {
+        
+    }
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "matt"{
+            
+            let nvc = segue.destinationViewController as! MapViewController
+            nvc.location = newAccounts.name
+            
     }
     
     
     
+}
 
 
-
+}
