@@ -70,7 +70,16 @@ class SecondViewController: UIViewController, UIImagePickerControllerDelegate,UI
     
     
     @IBAction func shareButtonPlease(sender: UIBarButtonItem) {
+        let textToShare = "Swift is awesome!  Check out this website about it!"
         
+        if let myWebsite = NSURL(string: "http://www.codingexplorer.com/") {
+            let objectsToShare = [textToShare, myWebsite]
+            let activityVC = UIActivityViewController(activityItems: objectsToShare, applicationActivities: nil)
+            
+            activityVC.popoverPresentationController?.sourceView =
+            self.presentViewController(activityVC, animated: true, completion: nil)
+        }
+    
     }
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "matt"{
