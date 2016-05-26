@@ -31,7 +31,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
             }
             else
             {
-                let currentAccounts = Accounts()
+                let customers  = Accounts()
                 let annotation = MKPointAnnotation()
                 var coordinate = CLLocationCoordinate2D()
                 

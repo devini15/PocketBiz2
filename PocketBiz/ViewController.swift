@@ -43,7 +43,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let NVC = segue.destinationViewController as! SecondViewController
         let currentRow = myTableView.indexPathForSelectedRow?.row
-        NVC.customer = AccountsArray[currentRow!]
+        NVC.newAccounts = AccountsArray[currentRow!]
         
         
     }

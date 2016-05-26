@@ -21,6 +21,7 @@ class SecondViewController: UIViewController, UIImagePickerControllerDelegate,UI
     
     
     
+    
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var locationTextField: UITextField!
     
@@ -85,7 +86,7 @@ class SecondViewController: UIViewController, UIImagePickerControllerDelegate,UI
         if segue.identifier == "matt"{
             
             let nvc = segue.destinationViewController as! MapViewController
-            nvc.location = newAccounts.name
+            nvc.location = customer.name
             
     }
     
